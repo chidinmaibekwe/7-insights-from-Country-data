@@ -1,0 +1,29 @@
+# Load libraries
+
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+
+# Data collection
+
+```{r}
+cnt_data <- readr::read_csv(".\\umldata\\Country-data.csv")
+View(cnt_data)
+```
+
+# Data information
+
+```{r}
+head(cnt_data)
+```
+
+```{r}
+#structure of dataset
+str(cnt_data)
+```
+
+```{r}
+#missing values
+sum(is.na(cnt_data))
+```
